@@ -1,40 +1,84 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-    <header>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101827">
+  <meta name="description" content="Portfolio of Priyanshu Mittal — AI, data science, machine learning, and software engineering projects.">
+  <title>Priyanshu Mittal — AI & Data Science</title>
+  <style>
+    :root{color-scheme:dark;--bg:#0b1020;--panel:#121a2d;--text:#edf2ff;--muted:#a6b2cc;--accent:#82e6c5;--line:#293651}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 80% 0%,#1b3150 0,transparent 38%),var(--bg);color:var(--text);font:16px/1.65 system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
+    a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline} .wrap{width:min(1040px,calc(100% - 40px));margin:auto}
+    header{padding:76px 0 56px;border-bottom:1px solid var(--line)}.eyebrow{color:var(--accent);font-weight:700;letter-spacing:.13em;text-transform:uppercase;font-size:.78rem}
+    h1{font-size:clamp(2.8rem,7vw,5.2rem);line-height:1.04;letter-spacing:-.05em;margin:.3em 0}.lead{max-width:690px;color:var(--muted);font-size:1.15rem}
+    .actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}.button{padding:10px 16px;border:1px solid var(--line);border-radius:999px;display:inline-block}.button.primary{background:var(--accent);color:#07131a;border-color:var(--accent);font-weight:700}
+    nav{display:flex;gap:20px;flex-wrap:wrap;padding:15px 0;border-bottom:1px solid var(--line);font-size:.95rem}section{padding:42px 0}h2{font-size:1.7rem;letter-spacing:-.025em;margin:0 0 18px}.muted{color:var(--muted)}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}.card{background:linear-gradient(145deg,#172239,var(--panel));border:1px solid var(--line);border-radius:18px;padding:22px}.card h3{margin:0 0 8px;font-size:1.15rem}.tag{display:inline-block;border:1px solid #3a4b68;border-radius:999px;color:#c5d1e9;font-size:.78rem;padding:3px 9px;margin:5px 5px 0 0}
+    .skills{display:flex;flex-wrap:wrap;gap:9px}.skills span{padding:7px 12px;border-radius:9px;background:#172239;border:1px solid var(--line)}footer{border-top:1px solid var(--line);padding:28px 0 42px;color:var(--muted)}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+  </style>
 </head>
-</header>
-<main>
-    <body>
-        <h1>Priyanshu Mittal</h1>
-        <section>
-            <h2>About Me</h2>
-            <p>I am an AI engineer who loves to buid and develop ML/DL models. I am in third year DSAI</p>
-        </section>
-        <section>
-            <h2>Skills</h2>
-            <ul>
-                <li>Python</li>
-                <li>C++</li>
-                <li>R</li>
-            </ul>
-        </section>
-        <section>
-            <h2>More about me</h2>
-            <ul>
-                <li><a href="/">Github</a></li>
-                <li><a href="/">Linkedin</a></li>
-                <li><a href="/">Twitter</a></li>
-            </ul>
-        </section>
-        <section>
-            <h2>Contact</h2>
-            <p>You can reach me at +1234567890</p>
-            <p>Email: priyanshu@example.com</p>
-        </section>
-    </body>
-</main>
+<body>
+  <header>
+    <div class="wrap">
+      <div class="eyebrow">AI · Data Science · Software Engineering</div>
+      <h1>Priyanshu Mittal</h1>
+      <p class="lead">I build practical AI and data-driven systems, explore machine learning research, and enjoy turning complex problems into useful software.</p>
+      <div class="actions">
+        <a class="button primary" href="https://github.com/PriyanshuMittal0310">Explore my GitHub</a>
+        <a class="button" href="#projects">Selected projects ↓</a>
+      </div>
+    </div>
+  </header>
+  <nav class="wrap" aria-label="Main navigation">
+    <a href="#about">About</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#contact">Contact</a>
+  </nav>
+  <main class="wrap">
+    <section id="about">
+      <h2>About me</h2>
+      <p class="muted">I’m a B.Tech student focused on Data Science and Artificial Intelligence. My interests include multilingual NLP, retrieval-augmented generation, computer vision, data platforms, and autonomous systems. I value experiments that are measurable, engineering that is reproducible, and interfaces that make technology accessible.</p>
+    </section>
+    <section id="projects">
+      <h2>Selected work</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>DataChat — Natural Language to SQL</h3>
+          <p class="muted">A conversational analytics application that translates natural-language questions into SQL and helps users explore structured data.</p>
+          <span class="tag">LLMs</span><span class="tag">PostgreSQL</span><span class="tag">RAG</span><span class="tag">Next.js</span>
+          <p><a href="https://github.com/DataScience-ArtificialIntelligence/DataChat_NL--SQL-using-RAG">View repository ↗</a></p>
+        </article>
+        <article class="card">
+          <h3>Sahaayak-AI — Disaster Response</h3>
+          <p class="muted">A disaster information and response hub concept designed to bring useful situational information and mapping into one place.</p>
+          <span class="tag">AI</span><span class="tag">Geospatial</span><span class="tag">Maps</span>
+          <p><a href="https://github.com/PriyanshuMittal0310/Sahaayak-AI-Generalised-Disaster-Information-and-Response-Hub">View repository ↗</a></p>
+        </article>
+        <article class="card">
+          <h3>Multilingual Polarization Detection</h3>
+          <p class="muted">An NLP research workflow exploring multilingual text classification, parameter-efficient fine-tuning, and evaluation across languages.</p>
+          <span class="tag">XLM-R</span><span class="tag">LoRA</span><span class="tag">NLP</span>
+          <p><a href="https://github.com/PriyanshuMittal0310">See work on GitHub ↗</a></p>
+        </article>
+        <article class="card">
+          <h3>Autonomous Drone Navigation</h3>
+          <p class="muted">Modular work on drone navigation, telemetry, mission planning, perception, and autonomy validation.</p>
+          <span class="tag">Python</span><span class="tag">MAVLink</span><span class="tag">Robotics</span>
+          <p><a href="https://github.com/AnkitDash-code/IROC-2.0-Drone-Code">Reference repository ↗</a></p>
+        </article>
+      </div>
+    </section>
+    <section id="skills">
+      <h2>Tools & interests</h2>
+      <div class="skills"><span>Python</span><span>C++</span><span>SQL</span><span>PyTorch</span><span>Transformers</span><span>scikit-learn</span><span>PostgreSQL</span><span>Next.js</span><span>Git & GitHub</span><span>Computer Vision</span><span>NLP</span><span>RAG</span><span>Data Engineering</span></div>
+    </section>
+    <section id="contact">
+      <h2>Contact</h2>
+      <p class="muted">Interested in collaborative projects, research, and engineering opportunities? Reach out by email or find me on GitHub.</p>
+      <p>Email: <!--email_off-->23f2002327@ds.study.iitm.ac.in<!--/email_off--></p>
+      <p><a href="https://github.com/PriyanshuMittal0310">github.com/PriyanshuMittal0310 ↗</a></p>
+    </section>
+  </main>
+  <footer><div class="wrap">© 2026 Priyanshu Mittal · Built with HTML and CSS.</div></footer>
+</body>
 </html>
